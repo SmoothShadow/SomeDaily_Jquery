@@ -1,0 +1,134 @@
+body {
+    margin: 0;
+    text-align: center;
+}
+.pop-box {
+    margin: 0;
+    top: 0;
+    width: 400px;
+    height: 800px;
+    display: inline-block;
+    background-color: rgb(246,247,251);
+    box-sizing: border-box;      
+}
+.pop-box-bar {
+    width: 100%;
+    padding: 10px 20px;
+    display: inline-block;
+    box-sizing: border-box;
+}
+.bar-title {
+    float: left;
+    left: 20px;
+    /* margin-top: 20px; */
+    font-weight: bold;
+    font-family:"黑体";
+    margin-left: 10px;
+    text-align: left;
+}
+.number {
+    display: inline;
+}
+.bar-score {
+    border-radius: 3px;
+    box-sizing: border-box;
+    padding: 4px;
+    font-weight: normal;
+    font-size: 10px;
+    color: #fff;
+    background-color: rgb(180,180,188);
+    width: 113px;
+    text-align: left;
+    font-family: "宋体";
+    margin-top: 10px;
+    height: 22px;
+}
+.bar-score span:first-child {
+    margin-right: 5px;
+}
+.score {
+    padding-left: 5px;
+    border-left: 1px solid rgb(163,163,171);
+}
+.icon {
+    width: 1em;
+    height: 1em;
+    vertical-align: -0.15em;
+    fill: currentColor;
+    overflow: hidden;
+  }
+.bar-img {
+    float: right;
+    position: relative;
+    margin-top: 10px;
+}
+.bar-img img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+.img-lan {
+    position: absolute;
+    right: 50px;
+}
+.img-tu {
+    position: absolute;
+    right: 10px
+}
+.box-interact {
+    width: 360px;
+    border-radius: 20px;
+    margin: auto;
+    background-color: #fff;
+}
+.interact-box {
+    display: flex;
+    padding: 20px;
+}
+.interact-bar {
+    padding: 20px;
+    position: relative;
+    font-size: 14px;
+    font-family: "黑体";
+}
+.interact-bar span:first-child {
+    float: left;
+    font-weight: bold;
+}
+.interact-bar span:nth-child(2) {
+    float: right;
+    margin-right: 10px;
+    color: rgb(137,137,137);
+}
+.interact-img {
+    margin-right: 5px;
+}
+.interact-img img {
+    width: 70px;
+    height: 70px;
+    border-radius: 5px;
+}
+.box-dna {
+    padding: 20px;
+    width: 175px;
+    background-color: #fff;
+    box-sizing: border-box;
+    display: inline-block;
+    border-radius: 10px;
+    margin-top: 10px;
+    position: relative;
+}
+.box-title {
+    font-size: 14px;
+    color: rgb(137,137,137);
+}
+.dna {
+    text-align: left;
+    margin: 0 20px 20px 20px;
+}
+.dna-content {
+    font-size: 16px;
+    font-family: "黑体";
+    text-align: left;
+    margin-top: 20px;
+}  

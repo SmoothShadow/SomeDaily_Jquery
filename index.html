@@ -10,16 +10,110 @@
 <!--  <link rel="stylesheet" href="css/css.css">-->
   <!-- 低版本浏览器显示样式 -->
   <!-- <link rel="stylesheet" href="https://res.variflight.com/public_lib/css/lower.ie.prompt-1.1.1.css"> -->
+  <link rel="stylesheet" href="./css/main.css">
 </head>
-<body>
-<div >
-
+<body>  
+<div class="pop-box">
+    <div class="pop-box-bar">
+        <div class="bar-title">
+            <h1 class="number"></h1>&nbsp天前,<br>我们成为了好友.
+            <div class="bar-score">
+                <span>密友值</span><span class="score">11524分</span>
+                <svg class="icon" aria-hidden="true" style="height: 12px;">
+                    <use xlink:href="#icon-youjiantou"></use>
+                  </svg>
+            </div>
+        </div>
+        <div class="bar-img">
+            <img src="./img/lan.jpg" alt="" class="img-lan">
+            <img src="./img/tu.jpg" alt="" class="img-tu">
+        </div>
+    </div>
+    <div class="pop-box-content">
+        <div class="box-interact">
+            <div class="interact-bar">
+                <span>互动标识</span>
+                <span>查看全部</span>
+                <svg class="icon" aria-hidden="true" style="height: 12px;position: absolute;right: 10px;top: 22px;color: rgb(137,137,137);">
+                    <use xlink:href="#icon-youjiantou"></use>
+                  </svg>
+            </div>
+            <div class="interact-box">
+                <div class="interact-img"><img src="./img/fire.png" alt=""></div>
+                <div class="interact-img"><img src="./img/shot.png" alt=""></div>
+                <div class="interact-img"><img src="./img/rabbit.png" alt=""></div>
+                <div class="interact-img"><img src="./img/black.png" alt=""></div>
+            </div>
+        </div>
+        <div style="    margin-top: 20px;
+        text-align: left;
+        margin-left: 40px;
+        font-family: '黑体';
+        font-weight: bold;
+        font-size: 14px;">好友DNA</div>
+        <div class="dna">
+            <div class="box-dna">
+                <div class="box-title">聊天小结</div>
+                <svg class="icon" aria-hidden="true" style="height: 12px;position: absolute;right: 83px;top: 24px;color: rgb(137,137,137);">
+                    <use xlink:href="#icon-youjiantou"></use>
+                  </svg>
+                <div class="dna-content">
+                    友谊<br>
+                    持续升温
+                </div>
+            </div>
+            <div class="box-dna">
+                <div class="box-title">共同属性</div>
+                <svg class="icon" aria-hidden="true" style="height: 12px;position: absolute;right: 83px;top: 24px;color: rgb(137,137,137);">
+                    <use xlink:href="#icon-youjiantou"></use>
+                  </svg>
+                <div class="dna-content">
+                    11个<br>
+                    共同群聊
+                </div>
+            </div>
+            <div class="box-dna">
+                <div class="box-title">友谊时间线</div>
+                <svg class="icon" aria-hidden="true" style="height: 12px;position: absolute;right: 70px;top: 24px;color: rgb(137,137,137);">
+                    <use xlink:href="#icon-youjiantou"></use>
+                  </svg>
+                <div class="dna-content">
+                    2021/11/5<br>
+                    我们成为好友
+                </div>
+            </div>
+        </div>
+        <div class="box-interact">
+            <div class="interact-bar">
+                <span style="font-weight: normal;">1次好友送礼</span>
+                <!-- <span>查看全部</span> -->
+                <svg class="icon" aria-hidden="true" style="height: 12px;position: absolute;right: 10px;top: 22px;color: rgb(137,137,137);">
+                    <use xlink:href="#icon-youjiantou"></use>
+                  </svg>
+            </div>
+            <div class="interact-box">
+                <div class="interact-img"><img src="./img/present.png" alt=""></div>
+                <!-- <div class="interact-img"><img src="./img/shot.png" alt=""></div>
+                <div class="interact-img"><img src="./img/rabbit.png" alt=""></div>
+                <div class="interact-img"><img src="./img/black.png" alt=""></div> -->
+            </div>
+        </div>
 </div>
-<canvas id="c_n20" width="1077" height="929" style="position: fixed; top: 0px; left: 0px; z-index: -2; opacity: 0.5;"></canvas>
+</div>
+<canvas id="c_n20" width="100%" height="100%" style="position: fixed; top: 0px; left: 0px; z-index: -2; opacity: 0.5;"></canvas>
 <!-- jquery 插件 -->
 <script src="./js/jquery-3.6.0.min.js" charset="UTF-8"></script>
+<script src="./js/iconfont.js"></script>
 <!-- <script src="https://res.variflight.com/www_carnoc/zt/2021DH/js/TweenMax.js"></script> -->
 <script type="text/javascript" color="97,102,105" opacity="0.5" zindex="-2" count="200" src="https://cdn.bootcss.com/canvas-nest.js/1.0.0/canvas-nest.min.js">
+</script>
+<script>
+    var nowDate = new Date().getTime()
+    var startDate = new Date('2021-11-05').getTime()
+    console.log(nowDate, startDate)
+    const Day = parseInt((nowDate - startDate)/(1000*3600*24))
+    $('.number').text(Day)
+
 </script>
 <!-- 主要函数 -->
 <!-- <script src="./main.js"></script> -->
